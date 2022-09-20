@@ -194,6 +194,13 @@ body {
   padding-bottom: 2rem;
   text-transform: uppercase;
 }
+.guide_width h2 {
+  margin-top: 3rem;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-family: "NanumSquare", sans-serif;
+  font-weight: 600;
+}
 
 /* 버튼 */
 .btn {
@@ -235,7 +242,7 @@ body {
 }
 
 .btn_wrap {
-  margin: 3rem 0 0;
+  margin: 2rem 0 0;
 }
 .btn_wrap button {
   width: 100%;

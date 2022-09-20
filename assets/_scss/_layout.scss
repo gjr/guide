@@ -36,6 +36,15 @@ body{
         padding-bottom: 2rem;
         text-transform: uppercase;
     }
+    h2{
+        margin-top: 3rem;
+        text-transform: uppercase;
+        font: {
+            size:1.8rem;
+            family: $font-NanumSquare;
+            weight: 600;
+        }
+    }
 }
 
 /* 버튼 */
@@ -79,7 +88,7 @@ body{
     }
 }
 .btn_wrap{
-    margin: 3rem 0 0;
+    margin: 2rem 0 0;
 
     button{
         width: 100%;
