@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+//웹 폰트 페이스명, 파일명 정의
+$font: "NotoSansCJKkr";
+$font2: "GmarketSans";
+
+$font-face-custom: (
+        $font+'-DemiLight',
+        $font+'-Regular',
+        $font+'-Medium',
+        $font+'-Bold',
+        $font2+'Medium',
+        $font2+'Bold'
+
+) !global !default;
+
+//기본 폰트 설정
+$default-font-size: 2.1rem !default;
+$default-line-height: 1.5 !default;
+
+// 폰트 컬러 정의
+$color-text-base: #8f8f8f !global;
+
+//default font 속성
+$web-font-path: '/pc/assets/font/' !default; //웹 폰트 경로
+$fonts-default: (
+        font-name: unquote("'Malgun Gothic', '맑은 고딕', AppleGothicNeoSD, 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', Dotum, 돋움, arial, sans-serif"),
+        font-size: $default-font-size,
+        line-height: $default-line-height
+) !global !default;
+$fonts-default-size: map-get($fonts-default, font-size);
+
+@mixin font-family($type: null) {
+    $font-name: null;
+
+    @if($type == 'common') {
+        $font-name: nth($font-face-custom, 2), map-get($fonts-default, font-name);
+    } @else if($type == 'DemiLight') {
+        $font-name: nth($font-face-custom, 1);
+    } @else if($type == 'Regular') {
+        $font-name: nth($font-face-custom, 2);
+    } @else if($type == 'Medium') {
+        $font-name: nth($font-face-custom, 3);
+    } @else if($type == 'Bold') {
+        $font-name: nth($font-face-custom, 4);
+    } @else if($type == 'G-Medium'){
+        $font-name: nth($font-face-custom, 5);
+    } @else if($type == 'G-Bold'){
+        $font-name: nth($font-face-custom, 6);
+    } @else if($type == 'default'){
+        $font-name: $font-face-default;
+    }
+    font-family: $font-name;
+}
+
+@mixin font($type: null, $font-size: null, $line-height: null) {
+    @if($type != null and $type !='') {
+        @include font-family($type);
+    }
+    @if($font-size != null and $font-size != '') {
+        font-size: $font-size;
+    }
+    @if($line-height != null and $line-height != '') {
+        line-height: $line-height;
+    }
+}
+
+@each $font-name in $font-face-custom {
+    $font-path : $web-font-path + $font-name;
+
+    @font-face {
+        font-family: $font-name;
+        src: url($font-path + '.woff') format('woff');
+        font-style: normal;
+        font-weight: normal;
+    }
+}
