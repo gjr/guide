@@ -4,264 +4,223 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GUIDE</title>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div id="wrap">
         <div class="guide_width">
             <h1>button</h1>
-            <button type="button" class="btn btn_type01">확인</button>
-            <button type="button" class="btn btn_type02">취소</button>
-            <button type="button" class="btn btn_type03">목록</button>
-            <button type="button" class="btn btn_type04">임시저장</button>
-            <button type="button" class="btn btn_type01 round">이전</button>
-            <button type="button" class="btn btn_type02 round">다음</button>
-            <button type="button" class="btn btn_type01 disabled">취소</button>
+            <button type="button" class="btn">취소</button>
+            <button type="button" class="btn confirm">확인</button>
+            <a href="#" class="btn cancel">취소</a>
+            <a href="#" class="btn list">목록</a>
 
-            <h2>button 정렬</h2>
+            <br/><br/>
+
+            <button type="button" class="btn" disabled="disabled">취소</button>
+            <button type="button" class="btn confirm" disabled="disabled">확인</button>
+            <a href="#" class="btn cancel disabled">취소</a>
+            <a href="#" class="btn list disabled">목록</a>
+
+            <br/><br/><br/>
+
+            <h1>button 정렬</h1>
+            <h2>가운데정렬</h2>
             <div class="btn_wrap">
-                <button type="button" class="btn btn_type01">확인</button>
+                <button type="button" class="btn">취소</button>
+                <button type="button" class="btn confirm">확인</button>
             </div>
-            <div class="btn_wrap type01">
-                <button type="button" class="btn btn_type02">취소</button>
-                <button type="button" class="btn btn_type01">저장</button>
-            </div>
-            <div class="btn_wrap type01 st2">
-                <button type="button" class="btn btn_type02">취소</button>
-                <button type="button" class="btn btn_type01">저장</button>
-            </div>
-            <div class="btn_wrap type02">
-                <button type="button" class="btn btn_type01">확인</button>
-                <button type="button" class="btn btn_type02">취소</button>
-            </div>
-            <div class="btn_wrap type03">
-                <p><button type="button" class="btn btn_type03">목록</button></p>
-                <p>
-                    <button type="button" class="btn btn_type01">확인</button>
-                    <button type="button" class="btn btn_type02">취소</button>
-                </p>
+            <br/>
+            <h2>좌우정렬</h2>
+            <div class="btn_side">
+                <span><a href="#" class="btn list">목록</a></span>
+                <span>
+                    <button type="button" class="btn">취소</button>
+                    <button type="button" class="btn confirm">확인</button>
+                </span>
             </div>
         </div>
+
         <div class="guide_width">
             <h1>tab</h1>
-            <div class="main_tab">
-                <div class="main_tab_btnWrap">
-                    <button class="main_tab_btn active" data-tab="tab1">tab1</button>
-                    <button class="main_tab_btn" data-tab="tab2">tab2</button>
-                </div>
-            </div>
 
-            <div class="main_tabMenu">
-                <div class="main_tab_btnWrap">
-                    <button class="main_tab_btn active" data-tab="tab1">tab1</button>
-                    <button class="main_tab_btn" data-tab="tab2">tab2</button>
-                    <button class="main_tab_btn" data-tab="tab3">tab3</button>
-                    <button class="main_tab_btn" data-tab="tab4">tab4</button>
-                </div>
-            </div>
+            <ul class="main_tab">
+                <li class="active"><a href="#">tab1</a></li>
+                <li><a href="#">tab2</a></li>
+            </ul>
+            <br/><br/>
 
-            <div class="main_tabBox">
-                <div class="main_tab_btnWrap">
-                    <button class="main_tab_btn active" data-tab="tab1">tab1</button>
-                    <button class="main_tab_btn" data-tab="tab2">tab2</button>
-                </div>
-            </div>
+            <ul class="menu_tab">
+                <li class="active"><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>
+                <li><a href="#">메뉴5</a></li>
+            </ul>
+            <br/><br/>
 
-            <div class="main_tabBox type02">
-                <div class="main_tab_btnWrap">
-                    <button class="main_tab_btn active" data-tab="tab1">tab1</button>
-                    <button class="main_tab_btn" data-tab="tab2">tab2</button>
-                    <button class="main_tab_btn" data-tab="tab1">tab3</button>
-                    <button class="main_tab_btn" data-tab="tab2">tab4</button>
-                    <button class="main_tab_btn" data-tab="tab1">tab5</button>
-                    <button class="main_tab_btn" data-tab="tab2">tab6</button>
-                </div>
-            </div>
+            <ul class="tab_lineP">
+                <li class="active"><a href="#">일반정보</a></li>
+                <li><a href="#">담보평가</a></li>
+                <li><a href="#">계약조건</a></li>
+                <li><a href="#">사용조직</a></li>
+                <li><a href="#">해지정보</a></li>
+                <li><a href="#">대리점정본</a></li>
+            </ul>
         </div>
 
         <div class="guide_width">
             <h1>board</h1>
-            <div class="board">
-                <span class="date">2020.02.22</span>
-                <div class="title_wrap">
+            <div class="board_wrap">
+                <div class="inner">
+                    <span class="date">2020.02.22</span>
                     <p class="title">신규 신청 방식에 대한 업무 프로세스 안내</p>
-                    <p>신규<em>|</em>김동부</p>
+                    <span class="info">신규<em>|</em>김동부</span>
+                    <div class="board_box">
+                        <p>부동산 임차 관리 시스템이 개편됨에 따라 신규 신청 프로세스가 변경되어 안내 드립니다.</p>
+                        <p>부동산 임차 관리 시스템이 개편됨에 따라 신규 신청 프로세스가 변경되어 안내 드립니다.</p>
+                        <p>부동산 임차 관리 시스템이 개편됨에 따라 신규 신청 프로세스가 변경되어 안내 드립니다.</p>
+                    </div>
                 </div>
-                <div class="desc_wrap">
-                    <p>부동산 임차 관리 시스템이 개편됨에 따라 신규 신청 프로세스가 변경되어 안내 드립니다.</p>
-                </div>
-                <div class="uploadfile_box">
-                    <p>첨부파일</p>
-                    <p>newoder.doc</p>
-                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="col">첨부파일</th>
+                            <td>newoder.doc</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="btn_wrap type03">
-                <p><button type="button" class="btn btn_type03">목록</button></p>
-                <p>
-                    <button type="button" class="btn btn_type02">삭제</button>
-                    <button type="button" class="btn btn_type01">확인</button>
-                </p>
+            <div class="btn_side">
+                <span><a href="#" class="btn list">목록</a></span>
+                <span>
+                    <button type="button" class="btn">취소</button>
+                    <button type="button" class="btn confirm">확인</button>
+                </span>
             </div>
         </div>
-
 
         <div class="guide_width">
             <h1>form</h1>
-            <fieldset class="form_style">
-                <legend>form</legend>
-                <ul class="list_style02">
-                    <li>
-                        <div>
-                            <label for="">등록번호</label>
-                            <p class="p_txt">D123123123</p>
-                        </div>
-                        <div>
-                            <label for="form2">등록일</label>
-                            <p class="p_txt">D123123123</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <label for="">계약서 양식</label>
-                            <p class="line_wrap"><input type="radio" id="form_ra00" name="form_ra"><label for="form_ra00">당사양식</label></p>
-                            <p class="line_wrap"><input type="radio" id="form_ra01" name="form_ra" checked><label for="form_ra01">임대인양식</label></p>
-                        </div>
-                        <div>
-                            <label for="form2">연체이율</label>
-                            <input type="text" id="form2" value="직접입력" disabled>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <label for="form2">업태</label>
-                            <input type="text" id="form2" value="부동산">
-                        </div>
-                        <div>
-                            <label for="form2">분야</label>
-                            <input type="text" id="form2" value="임대">
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <label for="form2">자동갱신</label>
-                            <p class="line_wrap2"><input type="text" id="form2" value="10"><em class="txt_info">개월</em></p>
-                        </div>
-                        <div>
-                            <label for="form2">중도해지</label>
-                            <p class="line_wrap2 type01"><input type="text" id="form2" value="중도해지"><em>전 서면 변경</em></p>
-                        </div>
-                    </li>
-                    <li class="line1 line_input">
-                        <div>
-                            <label for="form2">연체이율</label>
-                            <input type="text" id="form2" placeholder="직접입력">
-                            <input type="text" id="form2" placeholder="직접입력">
-                            <input type="text" id="form2" placeholder="직접입력">
-                            <input type="text" id="form2" placeholder="직접입력">
-                            <input type="text" id="form2" placeholder="직접입력">
-                        </div>
-                    </li>
-                    <li class="line1">
-                        <div>
-                            <label for="form2">연체이율</label>
-                            <p class="line_wrap"><input type="checkbox" id="form_chek01"><label for="form_chek01">전기</label></p>
-                            <p class="line_wrap"><input type="checkbox" id="form_chek02"><label for="form_chek02">가스</label></p>
-                            <p class="line_wrap"><input type="checkbox" id="form_chek03"><label for="form_chek03">상하수도</label></p>
-                            <p class="line_wrap"><input type="checkbox" id="form_chek04"><label for="form_chek04">청소</label></p>
-                            <p class="line_wrap"><input type="checkbox" id="form_chek05"><label for="form_chek05">기타</label></p>
-                            <p class="line_wrap"><input type="checkbox" id="form_chek06"><label for="form_chek06">기타</label></p>
-                            <p class="line_wrap"><input type="checkbox" id="form_chek07"><label for="form_chek07">기타</label></p>
-                            <p class="line_wrap"><input type="checkbox" id="form_chek08"><label for="form_chek08">기타</label></p>
-                            <p class="line_wrap"><input type="checkbox" id="form_chek09"><label for="form_chek09">기타</label></p>
-                            <p class="line_wrap"><input type="checkbox" id="form_chek10"><label for="form_chek10">기타</label></p>
-                        </div>
-                    </li>
-                    <li class="line1">
-                        <div>
-                            <label for="form2">건물주소</label>
-                            <input type="text" class="input_w50" value="1234567">
-                            <input type="text" value="서울시 강남구 대치로 34 DB손해보험 빌딩"><input type="text" value="7층 403호 푸른부동산사무소">
-                        </div>
-                    </li>
-                </ul>
-                <div class="btn_wrap type01">
-                    <button type="button" class="btn btn_type02">취소</button>
-                    <button type="button" class="btn btn_type01">저장</button>
-                </div>
-            </fieldset>
-            <fieldset class="form_style">
-                <legend>form</legend>
-                <ul class="list_style">
-                    <li>
-                        <label for="name">이름</label>
-                        <input type="text" id="id" placeholder="이름을 입력해주세요.">
-                        <span class="error_txt">이름을 입력해주세요.</span>
-                    </li>
-                    <li class="line2">
-                        <label for="ymd">생년월일</label>
-                        <input type="text" id="ymd" placeholder="생년월일을 입력해주세요.">
-                        <span class="error_txt">생년월일을 입력해주세요.</span>
-                    </li>
-                    <li class="line2">
-                        <label for="ymd">성별</label>
-                        <p class="line_wrap"><input type="radio" name="gender" id="male"><label for="male">남자</label></p>
-                        <p class="line_wrap"><input type="radio" name="gender" id="female" checked><label for="female">여자</label></p>
-                    </li>
-                    <li>
-                        <label for="phone">휴대폰</label>
-                        <input type="tel" id="phone" placeholder="휴대폰번호를 입력해주세요.">
-                        <span class="error_txt">휴대폰번호를 입력해주세요.</span>
-                    </li>
-                    <li>
-                        <label for="mail">이메일</label>
-                        <input type="tel" id="mail" placeholder="이메일을 입력해주세요.">
-                        <span class="error_txt">이메일을 입력해주세요.</span>
-                    </li>
-                </ul>
-                <div class="btn_wrap type02">
-                    <button type="button" class="btn btn_type01">확인</button>
-                    <button type="button" class="btn btn_type02">취소</button>
-                </div>
-            </fieldset> 
-            <fieldset class="form_style">
-                <legend>form</legend>
-                <ul class="list_style">
-                    <li>
-                        <label for="id">아이디</label>
-                        <input type="text" id="id" placeholder="아이디를 입력해주세요.">
-                        <span class="error_txt">아이디를 입력해주세요.</span>
-                    </li>
-                    <li class="line2">
-                        <label for="pw">비밀번호</label>
-                        <input type="password" id="pw" placeholder="비밀번호를 입력해주세요.">
-                        <span class="error_txt">비밀번호를 입력해주세요.</span>
-                    </li>
-                    <li class="line2">
-                        <label for="pwc">비밀번호 확인</label>
-                        <input type="password" id="pwc" placeholder="비밀번호를 입력해주세요.">
-                        <span class="error_txt">비밀번호를 한번 더 입력해주세요.</span>
-                    </li>
-                    <li>
-                        <label for="">선택</label>
-                        <select name="" id="" class="select_style">
-                            <option value="">선택해주세요.</option>
-                            <option value="">선택1</option>
-                            <option value="">선택2</option>
-                        </select>
-                    </li>
-                    <li>
-                        <label for="">내용</label>
-                        <textarea name="" id="" cols="30" rows="10" class="textarea_style" placeholder="내용을 입력해주세요."></textarea>
-                    </li>
-                </ul>
-                <div class="btn_wrap">
-                    <button type="button" class="btn btn_type01">확인</button>
-                </div>
-            </fieldset>
+            <table class="table_list">
+                <caption>form</caption>
+                <tbody>
+                    <tr>
+                        <th scope="col">등록번호</th>
+                        <td>D123123123</td>
+                        <th scope="col">등록번호</th>
+                        <td>D123123123</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">계약서 양식</th>
+                        <td>
+                            <span><input type="radio" id="ra01" name="ra" checked="checked"><label for="ra01">당사양식</label></span>
+                            <span><input type="radio" id="ra02" name="ra"><label for="ra02">임대인양식</label></span>
+                        </td>
+                        <th scope="col">연체이율</th>
+                        <td>
+                            <input type="text" placeholder="직접입력" title="연체이율">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">자동갱신</th>
+                        <td>
+                            <span><input type="text" placeholder="직접입력" title="자동갱신"><em class="unit">개월</em></span>
+                        </td>
+                        <th scope="col">연체이율</th>
+                        <td>
+                            <select name="" id="">
+                                <option value="">선택</option>
+                                <option value="">선택</option>
+                                <option value="">선택</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">중도해지</th>
+                        <td>
+                            <fieldset class="pp_wrap">
+                                <input type="text" placeholder="직접입력" title="중도해지"><em class="unit2">전 서면 변경</em>
+                            </fieldset>
+                        </td>
+                        <th scope="col">대표폼의부서</th>
+                        <td>
+                            <fieldset class="pp_wrap">
+                                <input type="text" placeholder="직접입력" title="연체이율">
+                                <span><input type="text" placeholder="직접입력" title="연체이율"><button type="button" class="search_btn"><em>버튼</em></button></span>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col" >연체이율</th>
+                        <td colspan="3">
+                            <fieldset class="chk_wrap">
+                                <span><input type="checkbox" id="chk01" checked="checked"><label for="chk01">전기</label></span>
+                                <span><input type="checkbox" id="chk02"><label for="chk02">전기</label></span>
+                                <span><input type="checkbox" id="chk03"><label for="chk03">전기</label></span>
+                                <span><input type="checkbox" id="chk04"><label for="chk04">전기</label></span>
+                                <span><input type="checkbox" id="chk05"><label for="chk05">전기</label></span>
+                                <span><input type="checkbox" id="chk06"><label for="chk06">전기</label></span>
+                                <span><input type="checkbox" id="chk07"><label for="chk07">전기</label></span>
+                                <span><input type="checkbox" id="chk08"><label for="chk08">전기</label></span>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">건물주소</th>
+                        <td colspan="3">
+                            <fieldset class="address_wrap">
+                                <legend>주소지 입력</legend>
+                                <span><input type="text" placeholder="우편번호" title="우편번호"><button type="button" class="search_btn"><em>버튼</em></button></span>
+                                <input type="text" placeholder="도로명주소" title="도로명주소">
+                                <input type="text" placeholder="상세주소" title="상세주소">
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">담당자</th>
+                        <td colspan="3"><input type="text" placeholder="담당자" title="담당자"></td>
+                    </tr>
+                    <tr>
+                        <th scope="col">이메일</th>
+                        <td colspan="3">
+                            <fieldset class="mail_wrap">
+                                <input type="text" placeholder="이메일" title="이메일"><em>@</em>
+                                <input type="text" placeholder="naver.cooomm" title="이메일">
+                                <select name="" id="">
+                                    <option value="">직접입력</option>
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                </select>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">연락처</th>
+                        <td>
+                            <fieldset class="tel_wrap">
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                </select>
+                                <input type="tel" placeholder="7894" title="연락처"><em>-</em>
+                                <input type="tel" placeholder="1236" title="연락처">
+                            </fieldset>
+                        </td>
+                        <th scope="col">연체이율</th>
+                        <td>
+                            <input type="text" placeholder="직접입력" title="연체이율">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btn_wrap right">
+                <button type="button" class="btn">취소</button>
+                <button type="button" class="btn confirm">저장</button>
+            </div>
         </div>
-        
         <div class="guide_width">
             <h1>table</h1>
             <div class="table_wrap type01">
@@ -439,15 +398,14 @@
                 </div>
             </div>
             <div class="table_wrap">
-                <div class="table_searchWrap">
+                <fieldset class="search_wrap">
                     <select name="" id="">
                         <option value="">선택</option>
                         <option value="">선택</option>
                         <option value="">선택</option>
                     </select>
-                    <input type="text">
-                    <button type="button">버튼</button>
-                </div>
+                    <span><input type="text"><button type="button" class="search_btn"><em>버튼</em></button></span>
+                </fieldset>
                 <table class="table_style">
                     <caption>table</caption>
                     <thead>
@@ -578,78 +536,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="table_wrap type03">
-                <table class="table_style">
-                    <caption>table</caption>
-                    <tbody>
-                        <tr>
-                            <th>구분</th>
-                            <td>
-                                <p class="line_d"><input type="radio" id="radio0" name="radi" checked><label for="radio0">중계업체</label></p>
-                                <p class="line_d"><input type="radio" id="radio1" name="radi"><label for="radio1">시공업체</label> </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>담당자</th>
-                            <td><input type="text" value="담당자"></td>
-                        </tr>
-                        <tr>
-                            <th>이메일</th>
-                            <td colspan="3" class="table_flex type01">
-                                <p>
-                                    <input type="text" value="email123456"><em>@</em><input type="text" value="naver.commmmm">
-                                    <select name="" id="">
-                                        <option value="">직접입력</option>
-                                        <option value="">선택</option>
-                                        <option value="">선택</option>
-                                    </select>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>연락처</th>
-                            <td class="table_flex">
-                                <p>
-                                    <select name="" id="">
-                                        <option value="">선택</option>
-                                        <option value="">02</option>
-                                        <option value="">0202</option>
-                                    </select>
-                                    <input type="text" value="1234"><em>-</em><input type="text" value="1234">
-                                </p>
-                            </td>
-                            <th>분야</th>
-                            <td>
-                                <input type="text" value="분야">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>대표자</th>
-                            <td>
-                                <input type="text" value="대표자">
-                            </td>
-                            <th>휴대폰번호</th>
-                            <td class="table_flex">
-                                <p>
-                                    <select name="" id="">
-                                        <option value="">선택</option>
-                                        <option value="">02</option>
-                                        <option value="">0202</option>
-                                    </select>
-                                    <input type="text" value="1234"><em>-</em><input type="text" value="1234">
-                                </p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="btn_wrap type03">
-                <p><button type="button" class="btn btn_type03">목록</button></p>
-                <p>
-                    <button type="button" class="btn btn_type01">확인</button>
-                    <button type="button" class="btn btn_type02">취소</button>
-                </p>
-            </div>
+            
         </div>
     </div>
 </body>
