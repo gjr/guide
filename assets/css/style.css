@@ -396,7 +396,7 @@ input[type=radio] + label::before {
   content: "";
   width: 2rem;
   height: 2rem;
-  background: url(../assets/images/cheked01_off.png) no-repeat center;
+  background: url(../images/cheked01_off.png) no-repeat center;
   background-size: 2rem;
   position: absolute;
   top: 0.2rem;
@@ -406,7 +406,7 @@ input[type=radio]:checked {
   background: #222;
 }
 input[type=radio]:checked + label::before {
-  background: url(../assets/images/cheked01_on.png) no-repeat center;
+  background: url(../images/cheked01_on.png) no-repeat center;
   background-size: 2rem;
 }
 
@@ -436,7 +436,7 @@ input[type=checkbox] + label::before {
   left: 0;
 }
 input[type=checkbox]:checked + label::before {
-  background: url(../assets/images/checked_on.png) no-repeat center;
+  background: url(../images/checked_on.png) no-repeat center;
   background-size: 1.3rem;
 }
 
@@ -485,7 +485,7 @@ select {
   opacity: 0;
 }
 .table_list span button.search_btn {
-  background: url(../assets/images/search_btn.png) no-repeat center;
+  background: url(../images/search_btn.png) no-repeat center;
   width: 2rem;
   height: 2rem;
   background-size: 2rem;
@@ -691,7 +691,7 @@ select {
   opacity: 0;
 }
 .search_wrap button.search_btn {
-  background: url(../assets/images/search_btn.png) no-repeat center;
+  background: url(../images/search_btn.png) no-repeat center;
   width: 2rem;
   height: 2rem;
   background-size: 2rem;

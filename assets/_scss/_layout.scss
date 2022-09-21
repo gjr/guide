@@ -259,7 +259,7 @@ input[type=radio]{
             content:'';
             width:2rem;
             height:2rem;
-            background:url(../assets/images/cheked01_off.png)no-repeat center;
+            background:url(../images/cheked01_off.png)no-repeat center;
             background-size:2rem;
             position: absolute;
             top:0.2rem;
@@ -270,7 +270,7 @@ input[type=radio]{
         background:#222;
         &+label{
             &::before{
-                background:url(../assets/images/cheked01_on.png)no-repeat center;
+                background:url(../images/cheked01_on.png)no-repeat center;
                 background-size:2rem;
             }
         }
@@ -305,7 +305,7 @@ input[type=checkbox]{
     &:checked{
         &+label{
             &::before{
-                background:url(../assets/images/checked_on.png)no-repeat center;
+                background:url(../images/checked_on.png)no-repeat center;
                 background-size:1.3rem;
             }
         }
@@ -350,7 +350,7 @@ select{
                 @include hiddenText;
             }
             &.search_btn{
-                background:url(../assets/images/search_btn.png) no-repeat center;
+                background:url(../images/search_btn.png) no-repeat center;
                 width:2rem;
                 height:2rem;
                 background-size: 2rem;
@@ -595,7 +595,7 @@ select{
             @include hiddenText;
         }
         &.search_btn{
-            background:url(../assets/images/search_btn.png) no-repeat center;
+            background:url(../images/search_btn.png) no-repeat center;
             width:2rem;
             height:2rem;
             background-size: 2rem;
