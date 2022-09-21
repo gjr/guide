@@ -71,6 +71,7 @@ body{
         color:#aaa;
     }
     &.list{
+        border-color:#aaa;
         background:#aaa;
         color:#fff;
     }
@@ -416,7 +417,7 @@ select{
             width:8rem;
         }
     }
-    .pp_wrap{
+    .line_column02{
         display: flex;
         align-items: center;
         justify-content: space-between;

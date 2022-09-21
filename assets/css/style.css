@@ -227,6 +227,7 @@ body {
   color: #aaa;
 }
 .btn.list {
+  border-color: #aaa;
   background: #aaa;
   color: #fff;
 }
@@ -542,7 +543,7 @@ select {
   border-right: 1px solid #ddd;
   width: 8rem;
 }
-.table_list .pp_wrap {
+.table_list .line_column02 {
   display: flex;
   align-items: center;
   justify-content: space-between;
