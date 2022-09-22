@@ -112,17 +112,17 @@ body{
         weight:bold;
     }
 
-    &.type01{
+    &.onbg{
         background:#24263a;
         color:#fff;
     }
-    &.type02{
+    &.line{
         border:1px solid #fb802d;
         background:#fff;
         color:#fb802d;
         width: 100%;
     }
-    &.type03{
+    &.smallLine{
         border:1px solid #ccc;
         background:#fff;
         color:#222;
@@ -131,7 +131,7 @@ body{
         line-height: 3.2rem;
         font-size: 1.2rem;
     }
-    &.type04{
+    &.offbg{
         background:#ddd;
         color:#fff;
     }
@@ -176,6 +176,9 @@ body{
                 color:#fb802d;
             }
         }
+        &+li{
+            margin-left: 0.5rem;
+        }
     }
 }
 
@@ -200,6 +203,9 @@ body{
                 background:#383b5a;
                 color:#fff;
             }
+        }
+        &+li{
+            margin-left: 0.5rem;
         }
     }
 }
@@ -385,7 +391,6 @@ body{
 /* 폼 */
 .formm_type{
     ul{
-        @include clearfix;
         li{
             margin-bottom:3.2rem;
 
@@ -492,7 +497,11 @@ body{
         em{
             position: absolute;
             top:0.7rem;
-            right:10rem;   
+            right:10rem;
+            color:#fb802d;
+        }
+        &+input[type=text]{
+            margin-top: 1rem;
         }
     }
 }
