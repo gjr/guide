@@ -43,6 +43,103 @@ body{
             family: $font-NanumSquare;
         }
     }
+    input[type=text], input[type=password], input[type=tel]{
+        height:4.2rem;
+        border:1px solid #aaa;
+        min-width:26rem;
+        box-sizing: border-box;
+        color:#222;
+        padding: 0 3.8rem 0 1rem;
+        font: {
+            size:1.4rem;
+            family: $font-NanumSquare;
+        }
+    
+        &:disabled{
+            background:#eee;
+            border-color:#eee;
+            color:#ddd;
+        }
+    }
+    input[type=radio]{
+        position: absolute;
+        top: 0;
+        left:0;
+        opacity: 0;
+        overflow: hidden;
+    
+        &+label{
+            padding-left: 2.7rem;
+            line-height: 2rem;
+            &::before{
+                content:'';
+                width:2rem;
+                height:2rem;
+                background:url(../images/cheked01_off.png)no-repeat center;
+                background-size:2rem;
+                position: absolute;
+                top:0.2rem;
+                left:0;
+            }
+        }
+        &:checked{
+            background:#222;
+            &+label{
+                &::before{
+                    background:url(../images/cheked01_on.png)no-repeat center;
+                    background-size:2rem;
+                }
+            }
+        }
+    }
+    input[type=checkbox]{
+        position: absolute;
+        top: 0;
+        left:0;
+        opacity: 0;
+        overflow: hidden;
+    
+        &+label{
+            padding-left:2.7rem;
+            line-height: 2rem;
+            display: block;
+            &::before{
+                content: '';
+                height:2rem;
+                width: 2rem;
+                background:#fff;
+                border:1px solid #aaa;
+                margin-right: 0.7rem;
+                // background:url(/assets/images/checked_off.png)no-repeat center;
+                background-size:1.3rem;
+                box-sizing: border-box;
+                position: absolute;
+                top:0;
+                left:0;
+            }
+        }
+        &:checked{
+            &+label{
+                &::before{
+                    background:url(../images/checked_on.png)no-repeat center;
+                    background-size:1.3rem;
+                }
+            }
+        }
+    }
+    select{
+        border:1px solid #aaa;
+        height: 4rem;
+        width: 26rem;
+        padding: 0 1rem;
+        color:#222;
+        background: url(../images/select_btn.png)no-repeat center right 1rem;
+        background-size: 1.3rem;
+        font: {
+            size:1.4rem;
+            family: $font-NanumSquare;
+        }
+    }
 }
 
 /* 버튼 */
@@ -99,7 +196,7 @@ body{
 
 /* 탭 */
 .main_tab{
-    background:#eff3f7;
+    background:#f8f8f8;
     border-radius: 1.2rem;
     display: inline-block;
     li{
@@ -228,104 +325,6 @@ body{
 }
 
 /* 폼 */
-input[type=text], input[type=password], input[type=tel]{
-    height:4.2rem;
-    border:1px solid #aaa;
-    min-width:26rem;
-    box-sizing: border-box;
-    color:#222;
-    padding: 0 3.8rem 0 1rem;
-    font: {
-        size:1.4rem;
-        family: $font-NanumSquare;
-    }
-
-    &:disabled{
-        background:#eee;
-        border-color:#eee;
-        color:#ddd;
-    }
-}
-input[type=radio]{
-    position: absolute;
-    top: 0;
-    left:0;
-    opacity: 0;
-    overflow: hidden;
-
-    &+label{
-        padding-left: 2.7rem;
-        line-height: 2rem;
-        &::before{
-            content:'';
-            width:2rem;
-            height:2rem;
-            background:url(../images/cheked01_off.png)no-repeat center;
-            background-size:2rem;
-            position: absolute;
-            top:0.2rem;
-            left:0;
-        }
-    }
-    &:checked{
-        background:#222;
-        &+label{
-            &::before{
-                background:url(../images/cheked01_on.png)no-repeat center;
-                background-size:2rem;
-            }
-        }
-    }
-}
-input[type=checkbox]{
-    position: absolute;
-    top: 0;
-    left:0;
-    opacity: 0;
-    overflow: hidden;
-
-    &+label{
-        padding-left:2.7rem;
-        line-height: 2rem;
-        display: block;
-        &::before{
-            content: '';
-            height:2rem;
-            width: 2rem;
-            background:#fff;
-            border:1px solid #aaa;
-            margin-right: 0.7rem;
-            // background:url(/assets/images/checked_off.png)no-repeat center;
-            background-size:1.3rem;
-            box-sizing: border-box;
-            position: absolute;
-            top:0;
-            left:0;
-        }
-    }
-    &:checked{
-        &+label{
-            &::before{
-                background:url(../images/checked_on.png)no-repeat center;
-                background-size:1.3rem;
-            }
-        }
-    }
-}
-select{
-    border:1px solid #aaa;
-    height: 4rem;
-    width: 26rem;
-    padding: 0 1rem;
-    color:#222;
-    background: url(../images/select_btn.png)no-repeat center right 1rem;
-    background-size: 1.3rem;
-    font: {
-        size:1.4rem;
-        family: $font-NanumSquare;
-    }
-}
-
 .unit{
     position: absolute;
     top:1.1rem;
