@@ -346,7 +346,7 @@ body{
         }
         td{
             width: auto;
-            padding: 0.5rem 0 0 1rem;
+            padding: 0.5rem 0 0 0;
 
             span{
                 display: block;
@@ -502,6 +502,20 @@ body{
         }
         &+input[type=text]{
             margin-top: 1rem;
+        }
+    }
+}
+@media all and (max-width: 500px){
+    .tablem_box{
+        .tablem_style{
+            th{
+                display: block;
+                line-height: 2.4rem;
+            }
+            td{
+                display: block;
+                margin-bottom:1.5rem;
+            }
         }
     }
 }

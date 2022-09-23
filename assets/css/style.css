@@ -999,7 +999,7 @@ body.mo {
 }
 .tablem_box .tablem_style td {
   width: auto;
-  padding: 0.5rem 0 0 1rem;
+  padding: 0.5rem 0 0 0;
 }
 .tablem_box .tablem_style td span {
   display: block;
@@ -1131,4 +1131,15 @@ body.mo {
 }
 .formm_type .addline_wrap + input[type=text] {
   margin-top: 1rem;
+}
+
+@media all and (max-width: 500px) {
+  .tablem_box .tablem_style th {
+    display: block;
+    line-height: 2.4rem;
+  }
+  .tablem_box .tablem_style td {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
 }
