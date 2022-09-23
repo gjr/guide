@@ -1070,10 +1070,7 @@ body.mo {
   display: inline-block;
 }
 .formm_type ul li span + span {
-  margin-left: 2rem;
-}
-.formm_type .btnm_wrap {
-  padding-top: 0.8rem;
+  margin-left: 1.5rem;
 }
 .formm_type .unit_txt {
   text-align: center;
@@ -1089,11 +1086,11 @@ body.mo {
 }
 .formm_type .tel_wrap {
   display: flex;
-  margin-top: 2rem;
 }
 .formm_type .tel_wrap li {
   width: 25%;
   text-align: center;
+  margin-bottom: 0;
 }
 .formm_type .tel_wrap li + li {
   padding-left: 1rem;

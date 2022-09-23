@@ -430,13 +430,10 @@ body{
                 position: relative;
                 display: inline-block;
                 &+span{
-                    margin-left: 2rem;
+                    margin-left: 1.5rem;
                 }
             }
         }
-    }
-    .btnm_wrap{
-        padding-top: 0.8rem;
     }
     .unit_txt{
         text-align: center;
@@ -457,10 +454,10 @@ body{
     }
     .tel_wrap{
         display: flex;
-        margin-top: 2rem;
         li{
             width:25%;
             text-align: center;
+            margin-bottom:0;
             &+li{
                 padding-left: 1rem;
             }
