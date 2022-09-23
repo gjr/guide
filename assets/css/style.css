@@ -735,7 +735,6 @@ body.mo {
   line-height: 4rem;
   border-bottom: 1px solid #ddd;
   display: block;
-  font-weight: bold;
   box-sizing: border-box;
 }
 .guide_m input[type=radio] {
